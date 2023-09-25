@@ -1,3 +1,41 @@
 li.dropdown.dropdown.dropdown-help.dropdown-mobile {
 	display: none!important;
 }
+
+/* Sobrescribir la variable original */
+:root {
+    --primary: #598b5e;
+	--dt-primary-color:#598b5e;
+}
+:root,
+[data-theme=light] {
+  --brand-color: #598b5e; 
+}
+
+.navbar-expand {
+	background: #f3f1e4 url(https://awesomeblindswebservices.tk/assets/whitelabel/images/top-pattern-7.png);
+	background-repeat: repeat;
+	background-size: 600px !important;
+	background-position: center;
+}
+[data-theme=dark] .navbar-expand {
+	background: #141413 url(https://awesomeblindswebservices.tk/assets/whitelabel/images/top-pattern-8.png)!important;
+	background-repeat: repeat;
+	background-size: 600px !important;
+	background-position: center;	
+  }
+
+.btn-primary:not(:disabled):not(.disabled):active, div#driver-popover-item .driver-popover-footer button.driver-next-btn:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, div#driver-popover-item .driver-popover-footer button.driver-next-btn:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, div#driver-popover-item .driver-popover-footer .show > button.dropdown-toggle.driver-next-btn {
+	color: #fff;
+	background-color: #598b5e;
+	border-color: #f3f1e4;
+  }
+  .btn-primary:not(:disabled):not(.disabled):active:focus, div#driver-popover-item .driver-popover-footer button.driver-next-btn:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, div#driver-popover-item .driver-popover-footer button.driver-next-btn:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, div#driver-popover-item .driver-popover-footer .show > button.dropdown-toggle.driver-next-btn:focus {
+	box-shadow: var(--shadow-inset), 0 0 0 2px rgba(1, 64, 32, 0.5);
+  }
+  .btn-primary:hover, div#driver-popover-item .driver-popover-footer button.driver-next-btn:hover {
+	color: #fff;
+	background-color: #598b5e;
+	border-color: #f3f1e4;
+  }
+ 

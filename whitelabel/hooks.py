@@ -14,6 +14,16 @@ app_email = "maheshwaribhavesh95863@gmail.com"
 app_license = "MIT"
 app_logo_url = '/assets/whitelabel/images/whitelabel_logo.jpg'
 
+import frappe
+# import frappe.translate
+# import frappe.desk.desktop
+import whitelabel.overrides
+
+# # Replace frappe function with custom function
+frappe.translate.get_all_translations = whitelabel.overrides.get_all_translations
+# frappe._ = whitelabel.overrides._
+# frappe.desk.desktop._ = whitelabel.overrides._
+# frappe.desk.desktop.Workspace._= whitelabel.overrides._
 # Includes in <head>
 # ------------------
 
@@ -49,8 +59,8 @@ web_include_css = "/assets/whitelabel/css/whitelabel_web.css"
 # get_website_user_home_page = "whitelabel.utils.get_home_page"
 
 website_context = {
-	"favicon": app_logo or "/assets/whitelabel/images/whitelabel_logo.jpg",
-	"splash_image": app_logo or "/assets/whitelabel/images/whitelabel_logo.jpg"
+	"favicon": "/assets/whitelabel/images/apple-touch-icon.ico" or app_logo,
+	"splash_image": "/assets/whitelabel/images/Cube-1s-200px.png" or app_logo
 }
 after_migrate = ['whitelabel.api.whitelabel_patch']
 
