@@ -36,7 +36,8 @@ frappe.underscore = function (txt, replace, context = null) {
 	if (replace && typeof replace === "object") {
 		translated_text = $.format(translated_text, replace);
 	}
-	return translated_text.replace("ErpNext", "My Erp").replace("ERPNext", "My Erp");
+    frappe.boot.whitelabel_setting.whitelabel_app_name = frappe.boot.whitelabel_setting.whitelabel_app_name || 'ERP'
+	return translated_text.replace("ERPNext", frappe.boot.whitelabel_setting.whitelabel_app_name);
 };
 frappe._ = frappe.underscore;
 window.__ = frappe._;

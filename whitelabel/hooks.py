@@ -14,16 +14,6 @@ app_email = "maheshwaribhavesh95863@gmail.com"
 app_license = "MIT"
 app_logo_url = '/assets/whitelabel/images/whitelabel_logo.jpg'
 
-import frappe
-# import frappe.translate
-# import frappe.desk.desktop
-import whitelabel.overrides
-
-# # Replace frappe function with custom function
-frappe.translate.get_all_translations = whitelabel.overrides.get_all_translations
-# frappe._ = whitelabel.overrides._
-# frappe.desk.desktop._ = whitelabel.overrides._
-# frappe.desk.desktop.Workspace._= whitelabel.overrides._
 # Includes in <head>
 # ------------------
 
