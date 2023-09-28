@@ -127,7 +127,7 @@ boot_session = "whitelabel.api.boot_session"
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "whitelabel.event.get_events"
+# 	"frappe.desk.desktop.get_workspace_sidebar_items": "whitelabel.overrides.frappe.desk.desktop.get_workspace_sidebar_items"
 # }
 #
 # each overriding function accepts a `data` argument;
@@ -138,6 +138,7 @@ boot_session = "whitelabel.api.boot_session"
 # }
 
 override_whitelisted_methods = {
-	"frappe.utils.change_log.show_update_popup": "whitelabel.api.ignore_update_popup"
+	"frappe.utils.change_log.show_update_popup": "whitelabel.api.ignore_update_popup",
+    "frappe.desk.desktop.get_workspace_sidebar_items": "whitelabel.overrides.frappe.desk.desktop.get_workspace_sidebar_items"
 }
 
