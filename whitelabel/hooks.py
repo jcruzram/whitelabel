@@ -12,15 +12,15 @@ app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "maheshwaribhavesh95863@gmail.com"
 app_license = "MIT"
-app_logo_url = '/assets/whitelabel/images/whitelabel_logo.jpg'
+app_logo_url = '/assets/whitelabel/images/whitelabel_logo.svg'
 
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
 app_include_css = "/assets/whitelabel/css/whitelabel_app.css"
-app_include_js = "/assets/whitelabel/js/whitelabel.js"
-
+app_include_js = ["/assets/whitelabel/js/whitelabel-v1.js","/assets/whitelabel/js/onboarding_tours/onboarding_tours-v1.js"]
+# app_include_js = "/assets/js/whitelabel.min.js"
 # include js, css files in header of web template
 web_include_css = "/assets/whitelabel/css/whitelabel_web.css"
 # web_include_js = "/assets/whitelabel/js/whitelabel.js"
@@ -142,3 +142,20 @@ override_whitelisted_methods = {
     "frappe.desk.desktop.get_workspace_sidebar_items": "whitelabel.overrides.frappe.desk.desktop.get_workspace_sidebar_items"
 }
 
+fixtures = [
+    {"dt": "DocType", "filters": [
+        [
+            "name", "in", [
+                "Whitelabel Setting"
+            ]
+        ]
+    ]}
+    # ,
+    # {"dt": "Custom Field", "filters": [
+    #     [
+    #         "name", "in", [
+    #             "CustomFieldName"
+    #         ]
+    #     ]
+    # ]}
+]

@@ -15,14 +15,16 @@
   "application_logo",
   "app_logo_set",
   "column_break_2",
-  "logo_height",
   "logo_width",
+  "column_break_kpmcd",
+  "logo_height",
   "navbar_setting_section",
   "navbar_background_color",
   "whitelabel_app_name",
   "column_break_7",
   "custom_navbar_title",
-  "custom_navbar_title_style"
+  "custom_navbar_title_style",
+  "column_break_0ie8g"
  ],
  "fields": [
   {
@@ -118,11 +120,19 @@
    "fieldtype": "Check",
    "hidden": 1,
    "label": "App Logo Set"
+  },
+  {
+   "fieldname": "column_break_kpmcd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_0ie8g",
+   "fieldtype": "Column Break"
   }
  ],
  "issingle": 1,
  "links": [],
- "modified": "2022-04-20 11:27:44.618584",
+ "modified": "2023-09-29 01:53:28.664154",
  "modified_by": "Administrator",
  "module": "Whitelabel",
  "name": "Whitelabel Setting",
@@ -142,5 +152,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

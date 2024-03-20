@@ -1,0 +1,120 @@
+List view shows all the documents for a particular DocType. Here you can see all the current enabled users in the system. 
+These are filters. You can use them to narrow down list of records.
+When standard filters are not enough you can use advance filters. 
+Let's create a new user.
+"This is Users Workspace. You'll find all shortcuts for user, roles and permission management here."
+This is a shortcut to User DocType. <br>Let's Click on the User shortcut to explore all users in System.
+Select a customer for whom this invoice is being prepared.
+Select item that you have sold along with quantity and rate.
+"This is Awesomebar, it helps you to navigate anywhere in the system, find documents, reports, settings, create new records and many more things."
+These are workspaces. Each module workspace provides insightful information and shortcuts on one page. <br><br>Tip: You can build custom workspaces for your needs.
+<h5 style="line-height:1.5;">Click to visit the Workspace</h5>
+Enter code for the Item
+Enter name for the Item
+Select an Item Group
+"This is the default measuring unit that you will use for your product. It could be Nos, Kgs, Meters, etc."
+"When creating an Item, entering a value for this field will automatically create an Item Price at the backend. Entering a value after the Item has been saved will not work. In this case, the Item Price is created from any transactions with the Item."
+Select a Doctype for which you want to create a Print Format
+You can modify the style of the Print Format from this section
+You can add custom css for your Print Format from this section
+Check this if you want to add custom Jinja Code or JavaScript to your Print Format
+Select the type of Print Format
+Enter the code based on the Print Format Type you selected above
+This is the default currency for this company.
+"Here, you can add multiple addresses of the company"
+"Here, you can set default Accounts, which will ease the creation of accounting entries."
+This setting is recommended if you wish to track the real-time stock balance in your books of account. This will allow the creation of a General Ledger entry for every stock transaction.
+Select a Module to which this DocType would belong
+Check this to make the DocType as Custom
+"A Field (or a docfield) defines a property of a DocType. You can define the column name, label, datatype and more for DocFields. For instance, a ToDo doctype has fields description, status and priority. These ultimately become columns in the database table tabToDo."
+Select a Document for which you want the Custom Field
+Enter a Label for this field
+Select the label after which you want to insert new field.
+Select an appropriate Field Type that suits your requirements
+Check this to make it a mandatory field
+Select a customer or lead for whom this quotation is being prepared. Let's select a Customer.
+Select a specific Customer to whom this quotation will be sent.
+Select an item for which you will be quoting a price.
+You can select pre-populated Sales Taxes and Charges from here.
+Enter the Full Name of the Customer
+Let's name your first Letter Head with your company's name
+Select the image containing only header part of your letter Head.
+You can mark the Letter Head as default
+Enter code for Asset Item
+Enter name for Asset Item
+Select an Item Group
+Check this field to make this an Asset Item
+"On checking it, the system will create an Asset automatically on purchase"
+Select an Asset Category for this Asset Item
+Select a naming series which will be used to create an Asset automatically
+Select Naming Series based on which Asset ID will be generated
+Select an Asset Item
+Select a Location
+Check Is Existing Asset
+Set Available for use date
+Set Gross purchase amount
+Set Purchase Date
+Check Calculate Depreciation
+Enter depreciation which has already been booked for this asset
+Set Purpose to Opening Stock to set the stock opening balance.
+Edit the Posting Date by clicking on the Edit Posting Date and Time checkbox below.
+
+Select the items for which the opening stock has to be set.
+"Select the type of Stock Entry to be made. For now, to receive stock into a warehouses select <a href='https://docs.erpnext.com/docs/v13/user/manual/en/stock/articles/stock-entry-purpose#2purpose-material-receipt' target='_blank'>Material Receipt.</a>"
+Select a target warehouse where the stock will be received.
+Select an item and entry quantity to be delivered.
+Select a name for the warehouse. This should reflect its location or purpose.
+Select an account to set a default account for all transactions with this warehouse.
+Select Asset Supplier
+"Select an Asset Item, Enter rate and quantity"
+"Name Asset category. You can create categories based on Asset Types like Furniture, Property, Electronics etc."
+Check to enable Capital Work in Progress accounting
+Add a row to define Depreciation Method and other details. Note that you can leave Finance Book blank to have it's accounting done in the primary books of accounts.
+Select the Fixed Asset and Depreciation accounts applicable for this Asset Category type
+A name by which you will identify this template. You can change this later.
+Company for which this tax template will be applicable
+Set this template as the default for all sales transactions
+"You can add a row for a tax rule here. These rules can be applied on the net total, or can be a flat amount."
+"By default, the Item Name is set as per the Item Code entered. If you want Items to be named by a Naming Series choose the 'Naming Series' option."
+Set a Default Warehouse for Inventory Transactions. This will be fetched into the Default Warehouse in the Item master.
+Choose between FIFO and Moving Average Valuation Methods. Click <a href='https://docs.erpnext.com/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average' target='_blank'>here</a> to know more about them.
+Select a Supplier
+Set the 'Required By' date for the materials. This sets the 'Required By' date for all the items.
+Items to be purchased can be added here.
+Enter the Item Code.
+Enter the required quantity for the material.
+The purpose of the material request can be selected here. For now select "Purchase" as the purpose.
+Set the 'Required By' date for the materials. This sets the 'Required By' date for all the items.
+Setting the target warehouse sets it for all the items.
+Items table
+Select an Item code. Item details will be fetched automatically.
+Enter the required quantity for the material.
+"When a Supplier is saved, system generates a unique identity or name for that Supplier which can be used to refer the Supplier in various Buying transactions."
+Configure what should be the default value of Supplier Group when creating a new Supplier.
+Item prices will be fetched from this Price List.
+"If this option is configured 'Yes', ERPNext will prevent you from creating a Purchase Invoice or a Purchase Receipt directly without creating a Purchase Order first."
+"If this option is configured 'Yes', ERPNext will prevent you from creating a Purchase Invoice without creating a Purchase Receipt first."
+Select a customer.
+You can add items here.
+Select an item.
+Enter quantity.
+Enter rate of the item.
+You can add sales taxes and charges here.
+"By default, the Customer Name is set as per the Full Name entered. If you want Customers to be named by a <a href='https://docs.erpnext.com/docs/user/manual/en/setting-up/settings/naming-series' target='_blank'>Naming Series</a>. Choose the 'Naming Series' option."
+"If this option is configured 'Yes', ERPNext will prevent you from creating a Sales Invoice or Delivery Note without creating a Sales Order first. This configuration can be overridden for a particular Customer by enabling the 'Allow Sales Invoice Creation Without Sales Order' checkbox in the Customer master."
+"If this option is configured 'Yes', ERPNext will prevent you from creating a Sales Invoice without creating a Delivery Note first. This configuration can be overridden for a particular Customer by enabling the 'Allow Sales Invoice Creation Without Delivery Note' checkbox in the Customer master."
+Configure the default Price List when creating a new Sales transaction. Item prices will be fetched from this Price List.
+The percentage by which you can overbill transactions. For example, if the order value is $100 for an Item and percentage here is set as 10% then you are allowed to bill for $110.
+Select the role that is allowed to overbill a transactions.
+"If checked, system will unlink the payment against the respective invoice."
+"Similar to the previous option, this unlinks any advance payments made against Purchase/Sales Orders."
+Tax category can be set on Addresses. An address can be Shipping or Billing address. Set which addres to select when applying Tax Category.
+"Freeze accounting transactions up to specified date, nobody can make/modify entry except the specified Role."
+Users with this Role are allowed to set frozen accounts and create/modify accounting entries against frozen accounts.
+Select the role that is allowed to submit transactions that exceed credit limits set. The credit limit can be set in the Customer form.
+Select Supplier
+Add items in the table
+Select an item
+Enter the quantity
+Enter rate of the item
+You can add taxes here

@@ -1,0 +1,5 @@
+{
+	"js/whitelabel.min.js": [
+		"public/js/whitelabel.js"
+	]
+}

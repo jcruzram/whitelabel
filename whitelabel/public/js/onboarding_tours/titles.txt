@@ -1,0 +1,119 @@
+Users List
+Filters
+Advanced Filters
+New User
+Workspace
+Users Shortcut
+Select Customer
+Select Item
+Awesomebar
+Workspace List
+Users Workspace
+Item Code
+Item Name
+Item Group
+Default Unit of Measurement
+Standard Selling Rate
+Doctype
+Style Settings
+Custom CSS
+Custom Format
+Print Format Type
+Code
+Default Currency
+Address & Contact
+Accounts Settings
+Enable Perpetual Inventory
+Module
+Custom 
+Fields
+Document
+Label
+Insert After
+Field Type
+Is Mandatory Field
+Quotation To
+Party
+Items
+Sales Taxes and Charges
+Full Name
+Letter Head Name
+Image
+Default Letter Head
+Asset Item Code
+Asset Item Name
+Item Group
+Is this a Fixed Asset?
+Auto Create Asset on Purchase
+Asset Category
+Asset Naming Series
+Naming Series
+Item Code
+Location
+Is Existing Asset?
+Available For Use Date
+Gross Purchase Amount
+Purchase Date
+Calculate Depreciation
+Accumulated Depreciation
+Purpose
+Posting Date
+Items
+Stock Entry Type
+Default Target Warehouse
+Items
+Warehouse Name
+Account
+Supplier
+Items
+Asset Category Name
+Enable CWIP Accounting
+Finance Book Detail
+Accounts
+Title
+Company
+Is this Default Tax Template?
+Taxes Table
+Item Naming By
+Default Warehouse
+Default Valuation Method
+Supplier
+Required By
+Items Table
+Item Code
+Quantity
+Purpose
+Required By
+Target Warehouse
+Items
+Item Code
+Quantity
+Supplier Naming By
+Default Supplier Group
+Default Buying Price List
+Purchase Order Required
+Purchase Receipt Required
+Select Customer
+List of items
+Select Item
+Enter Quantity
+Enter Rate
+Add Sales Taxes and Charges
+Customer Naming By
+Sales Order Required for Sales Invoice & Delivery Note Creation
+Delivery Note Required for Sales Invoice Creation
+Default Selling Price List
+Over Billing Allowance Percentage
+Role Allowed to Over Bill
+Unlink Payment on Cancellation of Invoice
+Unlink Advance Payment on Cancellation of Order
+Determine Address Tax Category From
+Accounts Frozen Upto
+Role Allowed to Set Frozen Accounts & Edit Frozen Entries
+Credit Controller
+Select Supplier
+List of Items
+Select Item
+Enter Quantity
+Enter Rate
+Select taxes

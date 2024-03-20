@@ -19,9 +19,18 @@ $(document).ready(function() {
     })
 })
 frappe.underscore = function (txt, replace, context = null) {
+    const replacements = {
+        'Almacéns': 'Almacenes',
+        'inventarioss': 'inventarios',
+        '\\(ventas\\)s': '(ventas)'
+    };
 	if (!txt) return txt;
-	if (typeof txt != "string") return txt;
 
+    if (typeof txt != "string") return txt;
+
+    // if(txt.includes('Create an Item')){
+    //     alert(txt);
+    // }
 	let translated_text = "";
 
 	let key = txt; // txt.replace(/\n/g, "");
@@ -37,7 +46,14 @@ frappe.underscore = function (txt, replace, context = null) {
 		translated_text = $.format(translated_text, replace);
 	}
     frappe.boot.whitelabel_setting.whitelabel_app_name = frappe.boot.whitelabel_setting.whitelabel_app_name || 'ERP'
-	return translated_text.replace("ERPNext", frappe.boot.whitelabel_setting.whitelabel_app_name);
+    let modifiedString = translated_text.replace("ERPNext", frappe.boot.whitelabel_setting.whitelabel_app_name);
+    for (const key in replacements) {
+        if (replacements.hasOwnProperty(key)) {
+            const regex = new RegExp(key, 'g');
+            modifiedString = modifiedString.replace(regex, replacements[key]);
+        }
+    }
+	return modifiedString;
 };
 frappe._ = frappe.underscore;
 window.__ = frappe._;

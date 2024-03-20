@@ -42,8 +42,14 @@ def get_workspace_sidebar_items():
 	for page in all_pages:
 		try:
 			page["content"] = page["content"].replace('Your Shortcuts', _('Your Shortcuts'))
+			page["content"] = page["content"].replace('Quick Access', _('Quick Access'))
 			page["content"] = page["content"].replace('Reports & Masters', _('Reports & Masters'))
 			page["content"] = page["content"].replace('Reports &amp; Masters', _('Reports & Masters'))
+			page["content"] = page["content"].replace('Masters &amp; Reports', _('Reports & Masters'))
+			page["content"] = page["content"].replace('Elements', _('Elements'))
+			page["content"] = page["content"].replace('Documents', _('Documents'))
+			page["content"] = page["content"].replace('Settings', _('Settings'))
+			page["content"] = page["content"].replace('Integrations', _('Integrations'))
 			workspace = Workspace(page, True)
 			if has_access or workspace.is_permitted():
 				if page.public and (has_access or not page.is_hidden) and page.title != "Welcome Workspace":
